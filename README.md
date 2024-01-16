@@ -13,3 +13,6 @@ Para apresentação do gráfico utilizei a lib chartjs.
 
 Para execução do projeto basta acessar o diretório do mesmo e em seguida clicando 2x no arquivo index.html até que o navegador seja
 automativamente aberto
+
+
+Acesso ao projeto : https://rodricx.github.io/

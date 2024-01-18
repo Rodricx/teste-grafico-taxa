@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Lato:ital,wght@0,700;1,300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 
 *{
@@ -25,24 +26,48 @@
 /* Conjunto de classes relativas ao usuário */
 .box-user {
     width: 80%;
-    height: 120px;
+    height: 160px;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: left;
     margin: 0 auto;
+}
+
+.card-user {
+    width: 160px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.format-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13pt;
+    letter-spacing: 2px;
 }
 
 .user {
     color:rgb(97, 97, 97);
     width: 80px;
     height: 80px;
+    display: block;
+    border: 5px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px black;
 }
 
 .info-user {
-    list-style: none;
     font-family: Lato;
     font-size: 9pt;
     margin-left: 1%;
+    display: block;
+    
 }
 
 .info-user li {
@@ -124,23 +149,27 @@ th{
         height: 120px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 auto;
         
+    }
+
+    .format-text {
+        font-size: 9pt;
     }
     
     .user {
         color:rgb(97, 97, 97);
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
     
     .info-user {
         list-style: none;
         font-family: Lato;
-        font-size: 9pt;
+        font-size: 7pt;
         margin-left: 1%;
-        text-align: right;  
+        text-align: center;  
     }
     
     .info-user li {

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Lato:ital,wght@0,700;1,300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 *{
@@ -7,29 +7,50 @@
     margin: 0;
 }
 
+.base {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+}
+
 #content {
     box-sizing: border-box;
+    width: 90%;
+    height: calc(100% - 232px);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+    background-color: rgbA(212, 212, 212, .2);
 }
 
 .box-projecao {
-    width: 80%;
-    padding: 10px;
-    height: 200px;
-    margin: 0 auto;
-    font-family: "Lato";
     display: block;
-    border-top: 1px solid black;
+    width: 75%;
+    height: calc(100% - 20px);
+    font-family: "Lato";
+    padding: 10px 0 10px 0;
+}
+
+.box-projecao p {
+    font-size: 12pt;
+    font-family: Roboto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-indent: 2rem;
 }
 
 
 
 /* Conjunto de classes relativas ao usuário */
 .box-user {
-    width: 80%;
+    width: 90%;
     height: 160px;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: left;
+    border-bottom: 1px solid black;
     margin: 0 auto;
 }
 
@@ -48,14 +69,14 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 13pt;
+    font-size: 10pt;
     letter-spacing: 2px;
 }
 
 .user {
     color:rgb(97, 97, 97);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: block;
     border: 5px solid rgb(204, 204, 204);
     border-radius: 50%;
@@ -64,7 +85,7 @@
 
 .info-user {
     font-family: Lato;
-    font-size: 9pt;
+    font-size: 8pt;
     margin-left: 1%;
     display: block;
     
@@ -78,18 +99,21 @@
 /* Classe responsável por aplicar estilos ao gráfico */
 
 .box-grafico{
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 50%;
     margin-top: 2%;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.font-pesquisa{
+.font-pesquisa {
     list-style: none;
-    margin-top: 3%;
-    font-size: 11pt;
+    margin-top: 5%;
+    font-size: 10pt;
     display: block;
+    font-family: Roboto;
+    font-style: italic;
 }
 
 .font-pesquisa li::before{
@@ -98,25 +122,78 @@
 }
 
 
-/* Configuração de tables no HTML */
+/* Configuração da tabela selic */
 
-.config-table{
+.table-selic {
     width: 100%;
-    height: 90px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.config-table, th, td{
     border-collapse: collapse;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     background-color: rgb(249, 249, 249);
-    border: 1px solid rgb(204, 204, 204);    
+    border: 1px solid rgb(204, 204, 204); 
 }
 
-th{
+.table-selic th{
     background-color: lightgray;
+    font-style: italic;
+}
+
+/* Configuração para a tabela de inflação */
+
+.box-inflacao {
+    display: block;
+    width: calc(20% - 20px);
+    height: calc(100% - 20px);
+    font-family: "Lato";
+    padding: 10px;
+}
+
+.box-inflacao h2 {
+    font-size: 11pt;
+    display: table-row;
+}
+
+.box-inflacao p {
+    font-size: 10pt;
+    font-family: Roboto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.table-inflacao, th, td{
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.table-inflacao th {
+    width: 70px;
+    font-style: italic;
+}
+
+.table-inflacao tbody {
+    width: 100%;
+}
+
+.w-max {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+
+.table-inflacao td {
+    display: block;
+    text-align: right;
+}
+
+.table-inflacao th{
+    background-color: lightgray;
+}
+
+.disp-flex {
+    display: flex;
 }
 
 
@@ -124,91 +201,18 @@ th{
 /* Configuração do Rodapé e configurações básica do projeto */
 
 .footer {
-    text-align: center;
+    text-align: right;
     display: block;
-    width: 100%;
+    width: 90%;
     height: 30px;
-    background-color: rgb(226, 226, 226);
     font-family: "verdana";
-    font-size: 12pt;
-    line-height: 2;
+    line-height: 20px;
+    font-size: 9pt;
+    border-top: 1px solid black;
+    margin: 20px auto 0 auto;
+    font-style: italic;
 }
 
 .mt {
     margin-top: 3%;
-}
-
-
-
-/* Responsividade */
-
-@media(max-width: 500px){
-
-    .box-user {
-        width: 80%;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        
-    }
-
-    .format-text {
-        font-size: 9pt;
-    }
-    
-    .user {
-        color:rgb(97, 97, 97);
-        width: 50px;
-        height: 50px;
-    }
-    
-    .info-user {
-        list-style: none;
-        font-family: Lato;
-        font-size: 7pt;
-        margin-left: 1%;
-        text-align: center;  
-    }
-    
-    .info-user li {
-        padding: 1px;
-    }
-
-    .box-projecao{
-        height: auto;
-    }
-
-    .config-table{
-        width: 100%;
-        height: auto;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        padding: 0;
-        border: none;
-    }
-    
-    .config-table, th, td{
-        border-collapse: collapse;
-        text-align: left;
-        padding: 10px;
-        background-color: rgb(249, 249, 249);
-        display: flex;  
-        border: none;
-    }
-
-    .config-table td {
-        display: inline-block;
-        width: 90%;
-    }
-
-    th{
-        background-color: lightgray;
-    }
-
-
-    .footer{
-        font-size: 8pt;
-    }
 }
